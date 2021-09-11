@@ -15,7 +15,7 @@
   }
 
   function setup() {
-    createCanvas(320, 260);
+    createCanvas(windowWidth, windowHeight);
     // Create the video
     video = createCapture(VIDEO);
     video.size(320, 240);
@@ -32,10 +32,10 @@
     image(flippedVideo, 0, 0);
 
     // Draw the label
-    fill(255);
-    textSize(16);
+    fill(255,255,0);
+    textSize(200);
     textAlign(CENTER);
-    text(label, width / 2, height - 4);
+    text(label, width / 2, height / 2);
   }
 
   // Get a prediction for the current video frame
